@@ -16,7 +16,7 @@ call function `tidy_ucr_har_data` with the following parameters:
 2. test_path: test dataset file path
 3. features_path: the features file path
 
-function `tidy_ucr_har_data` return a two elements list with name "merge_train_test_data" and "avg_data_set"
+function `tidy_ucr_har_data` write dataset into file
 
-1. merge_train_test_data:  datasets that merge training dataset and test dataset
-2. avg_data_set: the average of each variable in merge_train_test_data
+1. merge_train_test_data.csv:  datasets that merge training dataset and test dataset
+2. avg_data.csv: the average of each variable in the file "merge_train_test_data.csv"
