@@ -15,7 +15,7 @@ tidy_ucr_har_data <- function(train_path, test_path, features_path){
   
   merge_data_set <- rbind(sel_train_dataset, sel_test_dataset)
   
-  avg_data <- sapply(merge_data_set, mean)
+  avg_data <- lapply(merge_data_set, mean)
   #list('merge_train_test_data' = merge_data_set, 'avg_data_set' = avg_data)
   write.table(merge_data_set, file = "merge_train_test_data.csv", sep = ",", row.names = FALSE)
   write.table(avg_data, file = "avg_data.csv", sep = ",", row.names = FALSE)
