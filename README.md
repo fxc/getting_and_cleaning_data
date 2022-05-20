@@ -12,11 +12,9 @@ source("run_analysis.R")
 
 call function `tidy_ucr_har_data` with the following parameters:
 
-1. train_path: training dataset file path
-2. test_path: test dataset file path
-3. features_path: the features file path
+1. data_path: dataset directory path
 
 function `tidy_ucr_har_data` write dataset into file
 
-1. merge_train_test_data.csv:  datasets that merge training dataset and test dataset
-2. avg_data.csv: the average of each variable in the file "merge_train_test_data.csv"
+1. tidy_data.csv:  tidy data file with the average of each variable for each activity and each subject
+
